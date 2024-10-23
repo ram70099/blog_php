@@ -110,3 +110,117 @@ button:hover{
     cursor: pointer; /* Change cursor to pointer on hover */
 }
 
+/* Style the category list items */
+ul#categoryList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#categoryList li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    cursor: move; /* Changes cursor to 'move' to indicate draggable */
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+ul#categoryList li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Add optional icons next to the items to suggest dragging */
+ul#categoryList li::before {
+    content: "\2630"; /* Unicode character for a 'draggable' icon */
+    margin-right: 10px;
+    color: #888;
+}
+}
+.sidebar {
+    width: 250px;
+    background-color: #ffffff; /* White background for the sidebar */
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5em; /* Increased font size for headings */
+    color: #333; /* Dark gray color for heading */
+    text-align: center; /* Centered heading */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Reset margins */
+}
+
+ul > li {
+    position: relative; /* Relative positioning for dropdown */
+}
+
+.subcategory {
+    display: none; /* Hide subcategories by default */
+    padding-left: 15px; /* Indent subcategories */
+    margin-top: 10px; /* Spacing between categories */
+    background-color: #f9f9f9; /* Light background for subcategories */
+    border-radius: 5px; /* Rounded corners for subcategory list */
+}
+
+input[type="checkbox"] {
+    display: none; /* Hide the checkbox */
+}
+
+.toggle-label {
+    cursor: pointer;
+    color: #007BFF; /* Link color */
+    font-weight: bold;
+    display: block;
+    padding: 10px 15px; /* Add padding for better touch targets */
+    border-radius: 5px; /* Rounded corners for label */
+    transition: background 0.3s; /* Smooth background change */
+}
+
+.toggle-label:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue on hover */
+}
+
+input[type="checkbox"]:checked ~ .subcategory {
+    display: block; /* Show subcategories when checkbox is checked */
+}
+
+li a {
+    text-decoration: none;
+    color: #333; /* Dark text color */
+    padding: 10px 0;
+    display: block; /* Block display for easier clicking */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+li a:hover {
+    color: #0056b3; /* Darken color on hover */
+    background-color: rgba(0, 0, 0, 0.05); /* Light background on hover */
+}
+
+/* Additional styles for icons */
+i {
+    margin-right: 8px; /* Space between icon and text */
+    color: #007BFF; /* Icon color */
+}
+
+
+/* Styling for category links */
+li a {
+    text-decoration: none;
+    color: #007BFF;
+    padding: 5px 0;
+    display: block; /* Block display for easier clicking */
+}
+
+li a:hover {
+    color: #0056b3; /* Darken color on hover */
+}

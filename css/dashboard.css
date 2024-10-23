@@ -1,0 +1,357 @@
+.sidebar {
+    width: 250px; /* Fixed width for a neat appearance */
+    background-color: #1e1e2d; /* Dark modern color */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the entire sidebar */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Elevated shadow for depth */
+}
+
+.category-toggle {
+    cursor: pointer; /* Cursor pointer to indicate it's clickable */
+    padding: 12px 15px;
+    background-color: #292942; /* Card-like background */
+    border-radius: 8px;
+    margin: 0; /* Remove margin */
+    border: none; /* Remove border */
+    text-align: left; /* Align text to the left */
+}
+
+.subcategory {
+    padding-left: 20px; /* Indent subcategories */
+}
+
+.subcategory li {
+    margin-bottom: 10px; /* Space between subcategory items */
+}
+
+.subcategory li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Align icon and text in a row */
+    padding: 8px 0; /* Vertical padding for items */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.subcategory li a:hover {
+    color: #ffd700; /* Highlight color on hover */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.blog-image {
+    width: 100px; /* Set a fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+}
+/*for edit button */
+/* Edit and Delete button styles */
+/* Style for action buttons */
+.action-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Edit button style */
+.action-buttons a.edit-btn {
+    background-color: #007bff; /* Blue for edit */
+}
+
+.action-buttons a.edit-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Delete button style */
+.action-buttons a.delete-btn {
+    background-color: #dc3545; /* Red for delete */
+}
+
+.action-buttons a.delete-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/*add category */
+/* Add Category Form */
+.add-category-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.add-category-container h2 {
+    font-size: 1.8em; /* Font size for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    color: #333; /* Dark color for the heading */
+}
+
+.add-category-container label {
+    font-weight: bold; /* Bold labels */
+    margin-bottom: 5px; /* Space below labels */
+    display: block; /* Block display for labels */
+}
+
+.add-category-container input[type="text"] {
+    width: 100%; /* Full width input */
+    padding: 10px; /* Padding for input */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below input */
+    font-size: 14px; /* Font size for input text */
+}
+
+.add-category-container button {
+    background-color: #28a745; /* Green background for the button */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.add-category-container button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+/*pagination section*/
+.pagination {
+    margin: 20px 0;
+}
+
+.pagination-link {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.pagination-link.active {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+
+
+
+
+/*comment section*/
+
+    .comment-form {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    .comment-form .form-group {
+        margin-bottom: 15px;
+    }
+    .comment-form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .comment-form input[type="text"],
+    .comment-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .comment-form .submit-btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .comment-form .submit-btn:hover {
+        background-color: #0056b3;
+    }
+    .comment-section {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .comment-section h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    .comment-form {
+        margin-bottom: 20px;
+    }
+
+    .comment-form h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .comment-form textarea {
+        width: 100%;
+        height: 80px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+
+    .comment-form input[type="submit"] {
+        background-color: #f39c12;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .comment-form input[type="submit"]:hover {
+        background-color: #e67e22;
+    }
+
+    .comments-list {
+        margin-top: 20px;
+    }
+
+    .comment {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .comment-author {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .comment-date {
+        font-size: 0.9em;
+        color: #888;
+    }
+
+    .comment-content {
+        margin-top: 5px;
+        color: #555;
+    }
+
+/* Style for the edit form */
+.edit-form {
+    width: 50%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.edit-form input[type="text"],
+.edit-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.edit-form .btn-update {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-form .btn-update:hover {
+    background-color: #218838;
+}
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.back-link:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+/*for dashboard*/
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+}
+
+.stat-item h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.stat-item p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+

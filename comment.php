@@ -1,17 +1,19 @@
 <?php
     session_start();
     include("common/connection.php");
-    include('class/loginc.php');
-    $obb = new User($connect);
+    include('class/blog.php');
+    $blog = new blogs($connect);
     $comments=[];
     if (isset($_GET['id'])) {
         $post_id = $_GET['id'];
+        $uid = $_SESSION['user_data']['uid'];
+
         // Fetch comments for the post
-        $comments = $obb->displaycomment($post_id);
+        $comments = $blog->displaycomment($post_id,$uid);
     }
     
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $message=$obb->addComment( $_POST['post_id'], $_POST['author'],  $_POST['content']);
+        $message=$blog->addComment( $_POST['post_id'], $_POST['author'],  $_POST['content']);
         if (isset($message)) {
             header("Location: comment.php?id=" . $_POST['post_id']);
             exit();

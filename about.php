@@ -1,10 +1,10 @@
 <?php
     include("common/connection.php");
-    include("class/loginc.php");
-    $obb = new User($connect);
+    include("class/login.php");
+    $login = new login($connect);
     if ($_SERVER['REQUEST_METHOD'] == 'POST') 
     {
-        $message=$obb->contact($_POST['name'],$_POST['email'],$_POST['subject'],$_POST['message'],'about_us');
+        $message=$login->contact($_POST['name'],$_POST['email'],$_POST['subject'],$_POST['message'],'about_us');
         if ( $message === TRUE) 
         {
             header('Location: index.php');

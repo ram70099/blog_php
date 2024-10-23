@@ -1,12 +1,12 @@
 <?php
 include("common/connection.php");
-include("class/loginc.php");
-$obb = new User($connect);
+include("class/login.php");
+$login = new login($connect);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') 
 {
     $table='about_us';
-    $message=$obb->contact($_POST['name'], $_POST['email'], $_POST['subject'], $_POST['message'],$table);
+    $message=$login->contact($_POST['name'], $_POST['email'], $_POST['subject'], $_POST['message'],$table);
     if ( $message === true) 
     {
         echo "<script>alert('Message sent successfully!');</script>";
